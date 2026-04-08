@@ -66,26 +66,41 @@ Features
 Getting Started
 
 git clone <your-repo-url>
+
 cd <project-folder>
+
 docker compose up --build
 
+
 After starting the project:
+
  • Frontend: http://localhost
+ 
  • Backend API: http://localhost:5000
+ 
  • Meilisearch: http://localhost:7700
+ 
 
 ⸻
 
 What I Learned
+
  • Building and managing multi-container applications
+ 
  • Docker networking basics
+ 
  • Working with volumes and persistent storage
+ 
  • Connecting backend services with databases
+ 
  • Structuring a simple microservice-based project
+ 
 
 ⸻
 
 Author
 
 Mykhailo Hudz
+
 Aspiring System Administrator / DevOps Engineer
+
