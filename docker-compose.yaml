@@ -1,0 +1,48 @@
+services: 
+  backend:
+    image: test_backend
+    build: 
+      context: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+      search:  
+        condition: service_healthy
+
+  frontend:
+    image: test_frontend
+    build: 
+      context: ./frontend
+    ports:
+      - "80:80"
+    depends_on:  
+      backend:    
+        condition: service_started
+
+  db:
+    image: postgres:16.0
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: my_db
+    healthcheck: 
+      # Використовуємо прямі значення для надійності в тест-команді
+      test: ["CMD-SHELL", "pg_isready -U user -d my_db"]
+      interval: 10s
+      timeout: 5s  
+      retries: 5 
+    volumes:    
+      - db_data:/var/lib/postgresql/data
+
+  search:
+    image: getmeili/meilisearch:latest
+    ports:    
+      - "7700:7700"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db_data:
