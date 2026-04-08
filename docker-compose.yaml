@@ -26,7 +26,6 @@ services:
       POSTGRES_PASSWORD: password
       POSTGRES_DB: my_db
     healthcheck: 
-      # Використовуємо прямі значення для надійності в тест-команді
       test: ["CMD-SHELL", "pg_isready -U user -d my_db"]
       interval: 10s
       timeout: 5s  
