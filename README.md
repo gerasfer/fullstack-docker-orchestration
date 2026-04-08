@@ -104,3 +104,8 @@ Mykhailo Hudz
 
 Aspiring System Administrator / DevOps Engineer
 
+##SERVICE SCHEME
+
+<img width="1152" height="648" alt="service scheme" src="https://github.com/user-attachments/assets/3ed80aab-697f-4f1b-bdb5-8c39377a7cf0" />
+
+
