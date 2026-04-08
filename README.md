@@ -5,10 +5,15 @@ This project demonstrates my practical experience with Docker and containerized 
 Overview
 
 The application consists of several containers working together:
+
  • Frontend — served with Nginx
+ 
  • Backend — Python (Flask)
+ 
  • Database — PostgreSQL 16
+ 
  • Search engine — Meilisearch
+ 
 
 All services are managed using Docker Compose and communicate within a shared network.
 
@@ -32,19 +37,29 @@ Tech Stack
 
 Architecture
  • Each service runs in its own container
+ 
  • Containers communicate through a Docker network
+ 
  • PostgreSQL uses a volume for persistent data
+ 
  • Backend connects to both database and search service
+ 
 
 ⸻
 
 Features
  • Multi-container setup using Docker Compose
+ 
  • Service isolation
+ 
  • Internal networking between services
+ 
  • Persistent database storage
+ 
  • Integrated search functionality
+ 
  • Easy local deployment
+ 
 
 ⸻
 
