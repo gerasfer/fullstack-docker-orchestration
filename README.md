@@ -20,6 +20,7 @@ All services are managed using Docker Compose and communicate within a shared ne
 ⸻
 
 Tech Stack
+
  • Docker
  
  • Docker Compose
@@ -65,7 +66,7 @@ Features
 
 ⸻
 
-Getting Started
+## Getting Started
 
 git clone [https://github.com/gerasfer/fullstack-docker-orchestration.git](https://github.com/gerasfer/fullstack-docker-orchestration.git)
 
@@ -85,7 +86,7 @@ After starting the project:
 
 ⸻
 
-What I Learned
+## What I Learned
 
  • Building and managing multi-container applications
  
@@ -100,13 +101,13 @@ What I Learned
 
 ⸻
 
-Author
+## Author
 
 Mykhailo Hudz
 
 Aspiring System Administrator / DevOps Engineer
 
-##SCREENSHOOTS
+## SCREENSHOOTS
 
 ## SERVICE SCHEME
 
