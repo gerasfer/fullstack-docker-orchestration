@@ -11,15 +11,22 @@ The application consists of several containers working together:
  • Search engine — Meilisearch
 
 All services are managed using Docker Compose and communicate within a shared network.
+
 ⸻
 
 Tech Stack
  • Docker
+ 
  • Docker Compose
+ 
  • Nginx
+ 
  • Python (Flask)
+ 
  • PostgreSQL 16
+ 
  • Meilisearch
+ 
 
 ⸻
 
