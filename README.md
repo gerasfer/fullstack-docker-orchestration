@@ -67,9 +67,9 @@ Features
 
 Getting Started
 
-git clone <your-repo-url>
+git clone [https://github.com/gerasfer/fullstack-docker-orchestration.git](https://github.com/gerasfer/fullstack-docker-orchestration.git)
 
-cd <project-folder>
+cd fullstack-docker-orchestration
 
 docker compose up --build
 
@@ -78,7 +78,7 @@ After starting the project:
 
  • Frontend: http://localhost
  
- • Backend API: http://localhost:5000
+ • Backend API: http://localhost:8000
  
  • Meilisearch: http://localhost:7700
  
